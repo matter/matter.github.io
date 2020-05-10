@@ -176,7 +176,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-11 00:51:27" itemprop="dateModified" datetime="2020-05-11T00:51:27+08:00">2020-05-11</time>
+                <time title="Modified: 2020-05-11 00:52:55" itemprop="dateModified" datetime="2020-05-11T00:52:55+08:00">2020-05-11</time>
               </span>
 
           
@@ -253,7 +253,7 @@
 <h2 id="最长公共前缀-1pt"><a href="#最长公共前缀-1pt" class="headerlink" title="最长公共前缀 - 1pt"></a>最长公共前缀 - 1pt</h2><p><a href="https://leetcode-cn.com/problems/longest-common-prefix/" target="_blank" rel="noopener">原题链接</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span><span class="params">(object)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">longestCommonPrefix</span><span class="params">(self, strs)</span>:</span></span><br><span class="line">        n = len(strs)</span><br><span class="line">        <span class="keyword">if</span> n&lt;=<span class="number">1</span>:<span class="keyword">return</span> strs[<span class="number">0</span>] <span class="keyword">if</span> strs <span class="keyword">else</span> <span class="string">""</span></span><br><span class="line">        start,end = <span class="number">0</span>,min([len(i) <span class="keyword">for</span> i <span class="keyword">in</span> strs])</span><br><span class="line">        <span class="keyword">while</span> start&lt;end:</span><br><span class="line">            <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,n<span class="number">-1</span>):</span><br><span class="line">                <span class="keyword">if</span> strs[i][start]!=strs[i+<span class="number">1</span>][start]:</span><br><span class="line">                    <span class="keyword">return</span> strs[<span class="number">0</span>][:start]</span><br><span class="line">            start += <span class="number">1</span></span><br><span class="line">        <span class="keyword">return</span> strs[<span class="number">0</span>][:start]</span><br></pre></td></tr></table></figure>
 
-<h2 id="三数之和"><a href="#三数之和" class="headerlink" title="三数之和"></a>三数之和</h2><p><a href="https://leetcode-cn.com/problems/longest-common-prefix/" target="_blank" rel="noopener">原题链接</a></p>
+<h2 id="三数之和-2pt"><a href="#三数之和-2pt" class="headerlink" title="三数之和 - 2pt"></a>三数之和 - 2pt</h2><p><a href="https://leetcode-cn.com/problems/longest-common-prefix/" target="_blank" rel="noopener">原题链接</a></p>
 <h3 id="思路-8"><a href="#思路-8" class="headerlink" title="思路"></a>思路</h3><ul>
 <li>先排序，再确定一个数</li>
 <li>注意判别连续重复数</li>
